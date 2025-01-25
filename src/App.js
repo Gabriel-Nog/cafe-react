@@ -1,23 +1,33 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
+import Form from './components/Form/Form';
+import DisplayData from './components/DisplayData/DisplayData';
 import './App.css';
 
 function App() {
+  const [formData, setFormData] = useState({
+    nome: '',
+    table: '',
+    saleOrder: '',
+  });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    const formValues = {
+      nome: data.get('nome'),
+      table: data.get('table'),
+      saleOrder: data.get('saleOrder'),
+    };
+    setFormData(formValues);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Form onSubmit={handleSubmit} />
+        <DisplayData formData={formData} />
+      </div>
     </div>
   );
 }
