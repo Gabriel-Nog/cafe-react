@@ -5,8 +5,8 @@ import ProductsData from '../../data/products.json';
 const Form = ({ onSubmit }) => {
   return (
     <form onSubmit={onSubmit}>
-      <label htmlFor="nome">Nome</label>
-      <input type="text" id="nome" name="nome" />
+      <label htmlFor="name">Nome</label>
+      <input type="text" id="name" name="name" />
       <label htmlFor="table">Mesa</label>
       <input type="text" id="table" name="table" />
       <label htmlFor="saleOrder">Pedido</label>
