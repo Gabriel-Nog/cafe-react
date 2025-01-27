@@ -4,7 +4,7 @@ import ProductsData from '../../data/products.json';
 
 const Form = ({ onSubmit }) => {
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} id="form-sale-order">
       <label htmlFor="name">Nome</label>
       <input type="text" id="name" name="name" />
       <label htmlFor="table">Mesa</label>
@@ -13,7 +13,7 @@ const Form = ({ onSubmit }) => {
       <select id="saleOrder" name="saleOrder">
         {ProductsData.map((product) => (
           <option key={product.id} value={product.id}>
-            {product.name} - R$ {product.price}
+            {product.name} - R$ {product.price},00
           </option>
         ))}
       </select>

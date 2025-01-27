@@ -1,4 +1,6 @@
 import { React } from 'react';
+import { Link } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
 import Slide from '../../components/Slide/Slide';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
@@ -7,6 +9,7 @@ import './Home.css';
 const Home = () => {
   return (
     <>
+      <Link to="/sale-order">Menu</Link>
       <div className={'slide-show-principal'}>
         <Slide type="home" />
       </div>

@@ -1,20 +1,43 @@
 .display-data {
   display: flex;
+  padding: 20px;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin-top: 20px;
   border: solid 4px #622804;
   border-radius: 10px;
   font-size: 22px;
+  gap: 40px;
   color: #622804;
 }
-
-p {
+.data-orders {
   display: flex;
-  align-self: flex-start;
-  margin: 12px;
+  flex-direction: column;
+}
+.data-order-prices {
+  display: flex;
+  width: 100%;
+}
+
+.data-orders-values {
+  color: #a6744c;
+}
+
+.order {
+  display: flex;
+  margin-right: 30px;
+}
+
+.price {
+  display: flex;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
