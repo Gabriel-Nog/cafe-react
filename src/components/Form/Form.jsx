@@ -2,7 +2,7 @@ import React from 'react';
 import './Form.css';
 import ProductsData from '../../data/products.json';
 
-const Form = ({ onSubmit }) => {
+const Form = ({ onSubmit, id }) => {
   return (
     <form onSubmit={onSubmit} id="form-sale-order">
       <label htmlFor="name">Nome</label>
@@ -10,7 +10,7 @@ const Form = ({ onSubmit }) => {
       <label htmlFor="table">Mesa</label>
       <input type="text" id="table" name="table" />
       <label htmlFor="saleOrder">Pedido</label>
-      <select id="saleOrder" name="saleOrder">
+      <select id="saleOrder" name="saleOrder" defaultValue={id || ''}>
         {ProductsData.map((product) => (
           <option key={product.id} value={product.id}>
             {product.name} - R$ {product.price},00

@@ -7,13 +7,12 @@ import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <ToastContainer />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sale-order" element={<Pedidos />} />
-        </Routes>
-      </div>
+      <ToastContainer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sale-order" element={<Pedidos />} />
+        <Route path="/sale-order/:id" element={<Pedidos />} />
+      </Routes>
     </BrowserRouter>
   );
 }

@@ -8,20 +8,27 @@
   overflow: hidden;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transform: scale(0.9);
+  margin: 0; /* Added to remove margin between elements */
+}
+
 .contact-container {
   display: flex;
   justify-content: space-between;
+  margin: 0; /* Added to remove margin between elements */
 }
-
 .slide-show-contact {
   width: 50%;
-  height: auto;
+  transform: scale(1.1);
 }
-
 .slide-show-contact h3 {
   top: 20%;
 }
-
 .contact-form {
   display: flex;
   width: 50%;
@@ -31,6 +38,8 @@
 
 .footer-container {
   display: flex;
+  width: 100%;
+  margin-top: 27px;
   justify-content: center;
   align-items: center;
   height: 75px;
