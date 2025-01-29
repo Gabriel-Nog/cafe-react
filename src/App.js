@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <ToastContainer />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/sale-order" element={<Pedidos />} />
         <Route path="/sale-order/:id" element={<Pedidos />} />
       </Routes>

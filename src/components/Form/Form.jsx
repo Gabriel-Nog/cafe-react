@@ -1,9 +1,14 @@
 import React from 'react';
+import ArrowBack from '../ArrowBack/ArrowBack';
 import './Form.css';
 import ProductsData from '../../data/products.json';
 
 const Form = ({ onSubmit, id }) => {
   return (
+    <>
+    <div className='arrow-back-container-form'>
+      <ArrowBack />
+    </div>
     <form onSubmit={onSubmit} id="form-sale-order">
       <label htmlFor="name">Nome</label>
       <input type="text" id="name" name="name" />
@@ -19,6 +24,7 @@ const Form = ({ onSubmit, id }) => {
       </select>
       <button type="submit">Finalizar</button>
     </form>
+    </>
   );
 };
 

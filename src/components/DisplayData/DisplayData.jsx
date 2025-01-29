@@ -1,5 +1,6 @@
 import React from 'react';
 import productsData from '../../data/products.json';
+import ArrowBack from '../ArrowBack/ArrowBack';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -29,6 +30,10 @@ const DisplayData = ({ formData }) => {
   };
 
   return (
+    <>
+    <div className='arrow-back-container-form'>
+    <ArrowBack />
+    </div>
     <div className="display-data" id="display-data">
       <div className="data-orders">
         <strong>Nome:</strong>
@@ -56,6 +61,7 @@ const DisplayData = ({ formData }) => {
         Finalizar
       </button>
     </div>
+    </>
   );
 };
 
