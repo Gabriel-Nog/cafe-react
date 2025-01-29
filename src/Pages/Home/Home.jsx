@@ -10,7 +10,6 @@ import './Home.css';
 const Home = () => {
   return (
     <>
-      {/* <Link to="/sale-order">Pedidos</Link> */}
       <div className="header-home-container">
       <Header />
       </div>
