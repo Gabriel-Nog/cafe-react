@@ -2,6 +2,7 @@ import { React } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from '../../components/Header/Header';
 import Slide from '../../components/Slide/Slide';
+import Label from '../../components/Label/Label';
 import Card from '../../components/Card/Card';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
@@ -11,12 +12,13 @@ const Home = () => {
   return (
     <>
       <div className="header-home-container">
-      <Header />
+        <Header />
       </div>
       <div className="slide-show-principal" id="principal">
         <Slide type="home" />
       </div>
       <div className="card-container-home" id="card-container-home">
+        <Label children={'Produtos'} />
         <Card />
       </div>
       <div className="contact-container" id="contact-container-home">
