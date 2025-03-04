@@ -1,11 +1,12 @@
 {
   "name": "back-end",
   "version": "1.0.0",
+  "type": "module",
   "description": "back-end para cafe-react",
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "migrate": "prisma migrate dev"
+    "seed": "node prisma/runSeeds.js"
   },
   "author": "",
   "license": "ISC",
