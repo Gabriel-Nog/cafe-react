@@ -1,0 +1,16 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "back-end para cafe-react",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "migrate": "prisma migrate dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prisma/client": "^6.4.1",
+    "prisma": "^6.4.1"
+  }
+}
